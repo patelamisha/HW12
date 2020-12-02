@@ -4,7 +4,7 @@ import sqlite3
 from flask import Flask, render_template, redirect
 from typing import Dict, List, Tuple
 app:Flask = Flask(__name__)
-sqlite_file: str = "/R:/Steven Institute/SSW -810-B/HW12/810_startup.db"
+sqlite_file: str = "R:/Steven Institute/SSW -810-B/HW12/810_startup.db"
 @app.route('/')
 def index() -> str:
     return redirect('/student')
