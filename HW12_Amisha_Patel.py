@@ -11,9 +11,7 @@ def index() -> str:
 @app.route('/student')
 def student_summary() -> str:
     """This function converts the query results into a list of dictionaries to the HTML template """
-    query: str = """select CWID, Name, Dept, Course, count(Student_CWID) as Students
-               from instructors join grades 
-               on instructors.CWID = grades.Instructor_CWID group by Course;"""
+    query: str = "select students.Name,students.CWID,grades.Course,grades.Grade,instructors.Name from students,grades,instructors where students.CWID = StudentCWID and InstructorCWID = instructors.CWID order by students.Name;"
     db: sqlite3.Connection = sqlite3.connect(sqlite_file)
     student_data :Dict[str,str] = [{'Name': name, 'CWID': cwid, 'Course': course, 'Grade': grade,
                                  'Instructor': instructor} for name, cwid, course, grade, instructor in db.execute(query)]

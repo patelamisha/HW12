@@ -1,0 +1,9 @@
+INSERT INTO majors (Major, "Required/Elective", Course) VALUES ('SFEN', 'R', 'SSW 540');
+INSERT INTO majors (Major, "Required/Elective", Course) VALUES ('SFEN', 'R', 'SSW 810');
+INSERT INTO majors (Major, "Required/Elective", Course) VALUES ('SFEN', 'R', 'SSW 555');
+INSERT INTO majors (Major, "Required/Elective", Course) VALUES ('SFEN', 'E', 'CS 501');
+INSERT INTO majors (Major, "Required/Elective", Course) VALUES ('SFEN', 'E', 'CS 546');
+INSERT INTO majors (Major, "Required/Elective", Course) VALUES ('CS', 'R', 'CS 570');
+INSERT INTO majors (Major, "Required/Elective", Course) VALUES ('CS', 'R', 'CS 546');
+INSERT INTO majors (Major, "Required/Elective", Course) VALUES ('CS', 'E', 'SSW 810');
+INSERT INTO majors (Major, "Required/Elective", Course) VALUES ('CS', 'E', 'SSW 565');
